@@ -12,12 +12,20 @@ import lombok.NoArgsConstructor;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Story {
 
+    private String id;
+
     private String title;
 
     @JsonProperty("time_ago")
     private String timeAgo;
 
     private String url;
+
+    public Story(String title, String timeAgo, String url) {
+        this.title = title;
+        this.timeAgo = timeAgo;
+        this.url = url;
+    }
 
     @Override
     public String toString() {
