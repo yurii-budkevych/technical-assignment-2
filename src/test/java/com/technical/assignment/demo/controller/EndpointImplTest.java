@@ -2,9 +2,6 @@ package com.technical.assignment.demo.controller;
 
 import com.technical.assignment.demo.dto.Story;
 import com.technical.assignment.demo.storage.StoryStorage;
-import com.technical.assignment.demo.storage.StoryStorageImpl;
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -12,9 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.test.context.TestPropertySource;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Arrays;
