@@ -39,7 +39,7 @@ public class StoryStorageImpl implements StoryStorage {
             offlineMode = true;
             return;
         }
-        System.out.println(stories.get(0).getId());
+
         offlineMode = false;
         for (Story story : stories) {
             if (map.containsKey(story.getTitle())) continue;
